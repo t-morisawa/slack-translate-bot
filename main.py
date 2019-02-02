@@ -8,6 +8,9 @@ from flask import Flask, jsonify
 
 def is_japanese(string):
     for ch in string:
+        # \n is not used in unicodedata.name
+        if ch is '\n':
+            continue
         name = unicodedata.name(ch)
         if "CJK UNIFIED" in name \
         or "HIRAGANA" in name \
