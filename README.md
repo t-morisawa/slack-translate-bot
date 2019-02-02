@@ -8,8 +8,11 @@ Slackで特定のチャンネルで呟くと英訳して返事をしてくれる
 * Python (Flask)
 
 # デプロイ方法
-* SlackとGCPのコンソールをぽちぽちする
-* IaC的なデプロイはtodo
+
+デプロイコードは未実装
 
 ## ソース更新
 * `main.py` `requirements.txt` をCloud Functionsのwebコンソールのフォームに貼り付けて更新。
+
+## 初回デプロイ
+TODO
