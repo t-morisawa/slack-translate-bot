@@ -18,8 +18,8 @@ Slackで特定のチャンネルで呟くと英訳して返事をしてくれる
  * [Cloud Functions](https://console.cloud.google.com/functions)を新規登録する。
  * `main.py` `requirements.txt` をCloud Functionsのwebコンソールのフォームに貼り付ける。
  * トリガーURLをメモしておく。
- * Slackの[outgoing-webhooks](https://slack.com/apps/A0F7VRG6Q)を新規登録する。
- * URL(s)にCloud FunctionsのトリガーURLを貼り付ける。
+ * Slackの[Outgoing Webhooks](https://slack.com/apps/A0F7VRG6Q)を新規登録する。
+ * Outgoing WebhooksのURL(s)にCloud FunctionsのトリガーURLを貼り付ける。それ以外のチャンネルやキーワードの設定はご自由に。
 
 ## ソース更新
  * `main.py` `requirements.txt` をCloud Functionsのwebコンソールのフォームに貼り付けて更新。
