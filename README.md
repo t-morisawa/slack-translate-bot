@@ -15,8 +15,8 @@ Slackで特定のチャンネルで呟くと英訳して返事をしてくれる
 ## 初回デプロイ
  * GCPおよびSlackに登録する。
  * [Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/)を有効にする。
- * Cloud Functionsを新規登録する。 
-　　* `main.py` `requirements.txt` をCloud Functionsのwebコンソールのフォームに貼り付ける。
+ * Cloud Functionsを新規登録する。
+ * `main.py` `requirements.txt` をCloud Functionsのwebコンソールのフォームに貼り付ける。
  * トリガーURLをメモしておく。
  * Slackの[outgoing-webhooks](https://slack.com/apps/A0F7VRG6Q)を新規登録する。
  * URL(s)にCloud FunctionsのトリガーURLを貼り付ける。
