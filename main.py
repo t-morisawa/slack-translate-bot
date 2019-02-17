@@ -45,6 +45,7 @@ def yamabiko(request):
 
     translation = translate_client.translate(
         text,
+        format_='text',
         target_language='en')
 
     translatedText = translation['translatedText'] + ' :coffee:'
