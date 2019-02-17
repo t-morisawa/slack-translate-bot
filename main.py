@@ -40,13 +40,9 @@ def yamabiko(request):
         print('It is a bot message.')
         return 'It is a bot message.'
 
-    try:
-        translation = translate_client.translate(
-            text,
-            target_language='en')
-    except Error:
-        print('failed translating: ' + text)
-        return 'failed translating: ' + text
+    translation = translate_client.translate(
+        text,
+        target_language='en')
 
     translatedText = translation['translatedText'] + ' :coffee:'
     return jsonify(text=translatedText)
